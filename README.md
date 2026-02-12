@@ -1,6 +1,6 @@
 # 🚀 Cygnus Job Board
 
-A production-ready job listing application built with React and TailwindCSS.
+job listing application built with React and TailwindCSS.
 
 ![Job Board Preview](https://via.placeholder.com/1200x630/4f46e5/ffffff?text=Cygnus+Job+Board)
 
@@ -32,51 +32,54 @@ A production-ready job listing application built with React and TailwindCSS.
 
 ## 📁 Project Structure
 
-
-
-
-
-
-
-src/
-├── components/
-│ ├── JobCard.jsx # Individual job card with highlight
-│ ├── Filters.jsx # Location and type filters
-│ ├── SearchBar.jsx # Debounced search input
-│ └── EmptyState.jsx # No results display
-├── data/
-│ └── jobs.js # 12+ mock jobs with diverse data
-├── App.jsx # Main logic with useMemo optimization
-├── main.jsx # Entry point
-└── index.css # Tailwind styles   
+```bash
+cygnus-job-board/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── JobCard.jsx      # Individual job card with ₹ salary
+│   │   ├── Filters.jsx      # Compact filter buttons
+│   │   ├── SearchBar.jsx    # 40px height, debounced search
+│   │   └── EmptyState.jsx   # No results UI
+│   ├── data/
+│   │   └── jobs.js          # 12+ jobs with Indian salaries
+│   ├── App.jsx              # Main application logic
+│   ├── main.jsx            # Entry point
+│   └── index.css           # Tailwind styles
+├── tailwind.config.js      # Custom animations & colors
+├── postcss.config.js       # Tailwind plugins
+├── vite.config.js         # Vite configuration
+├── package.json           # Dependencies
+└── README.md              # Documentation 
 
 
 
 
 ## 🚀 Quick Start
 
+### Prerequisites
+- Node.js 16+ 
+- npm or yarn
+
+### Installation
+
 ```bash
+# Clone the repository
+git clone https://github.com/VenkateshLatchireddy/jobboard.git
+
+# Enter project directory
+cd jobboard
+
 # Install dependencies
 npm install
 
-# Start development server
+# Start the app
 npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview  
-
-
-
 
 
 🔍 Key Implementation Details 
 
-
 State Management  
-
 
 const [searchTerm, setSearchTerm] = useState('');
 const [locationFilter, setLocationFilter] = useState('All');
@@ -97,8 +100,8 @@ Debounced input (300ms delay)
 Multi-field search (title, company, requirements)
 
 
-
 Responsive Design
+
 Mobile: Single column (320px+)
 
 Tablet: 2 columns (768px+)
@@ -108,26 +111,11 @@ Desktop: 3 columns (1024px+)
 Fluid typography and spacing 
 
 
-
-📱 Live Demo
-View Live Demo 
-
-
-
-🎥 Screen Recording
-Watch Demo Video 
-
-
-
 📄 License
+
 MIT - Free for learning and assignment purposes.  
 
-
-
-
 Built with ❤️ for Cygnus Frontend Intern Assignment 
-
-
 
 
 ---
