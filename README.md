@@ -52,7 +52,7 @@ cygnus-job-board/
 ├── package.json           # Dependencies
 └── README.md              # Documentation 
 
-
+```
 
 
 ## 🚀 Quick Start
@@ -76,7 +76,7 @@ npm install
 # Start the app
 npm run dev
 
-
+```
 🔍 Key Implementation Details 
 
 State Management  
@@ -118,24 +118,5 @@ MIT - Free for learning and assignment purposes.
 Built with ❤️ for Cygnus Frontend Intern Assignment 
 
 
----
 
-# **✅ FINAL SETUP COMMANDS**
 
-```powershell
-
-# 1. Create fresh project
-npm create vite@latest jobboard -- --template react
-cd jobboard
-
-# 2. Install Tailwind CSS v3
-npm install -D tailwindcss@3.3.3 postcss@8.4.27 autoprefixer@10.4.14
-npx tailwindcss init -p
-
-# 3. Install other dependencies
-npm install
-
-# 4. NOW COPY ALL THE FILES ABOVE INTO THEIR RESPECTIVE LOCATIONS
-
-# 5. Run the project
-npm run dev
