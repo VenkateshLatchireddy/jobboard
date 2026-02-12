@@ -2,7 +2,7 @@ import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import { jobs, locations, types } from './data/jobs';
 import JobCard from './components/JobCard';
 import Filters from './components/Filters';
-import SearchBar from './components/SearchBar';
+import SearchBar from './components/Searchbar'
 import EmptyState from './components/EmptyState';
 
 function App() {
